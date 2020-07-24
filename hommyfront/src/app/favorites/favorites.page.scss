@@ -1,0 +1,49 @@
+ion-toolbar{
+    --ion-background-color: #ED1146;
+    color: #F6F6F6;
+}
+
+ion-card{
+    --ion-background-color: #ED1146
+}
+
+.imagem{
+    padding-left: 25%;
+}
+
+.toolbar{
+    display: flex;
+    align-items: center;
+}
+
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 1em;
+    color: #000000;
+    text-align: center;
+}
+
+h3{
+    font-size: 1em;
+    color: #F6F6F6;
+    text-align: center;
+
+}
+
+.botao{
+    background-color: #F6F6F6;
+    text-align: center;
+    color: #000000;
+    padding: 2%;
+    margin: 13%;
+    border-radius: 5px;
+    height: 8%;
+    text-align: center;
+    font-size: 1.2em;
+    height: 49.4px;
+}
