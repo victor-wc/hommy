@@ -18,22 +18,15 @@
     <h1>Topo</h1> <h1>Sugerido</h1> <h1>Novo</h1>        
   </div>
 
-  <ion-card>
-    <img src="../assets/quarto.jpg">
+  <ion-card *ngFor="let republica of republicas">
+    <img src="{{republica.imagem}}"/>
     <ion-card-header>
-      <ion-card-title><h2>4.97(2.127)</h2></ion-card-title>
+      <ion-card-title><h2>{{republica.rating}}</h2></ion-card-title>
     </ion-card-header>
-    <div class="imagem"><img src="../assets/rating.png"></div>
+    <div class="imagem"><img src="{{republica.imagemRating}}"/></div>
     <div class="botao">Clique para saber mais!</div>
   </ion-card>
 
-  <ion-card>
-    <img src="../assets/quarto2.jpg">
-    <ion-card-header>
-      <ion-card-title><h2>4.85(1.824)</h2></ion-card-title>
-    </ion-card-header>
-    <div class="imagem"><img src="../assets/rating.png"></div>
-    <div class="botao">Clique para saber mais!</div>
-  </ion-card>
+
 
 </ion-content>
