@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'republica1',
     loadChildren: () => import('./republica1/republica1.module').then( m => m.Republica1PageModule)
+  },
+  {
+    path: 'cadastrar',
+    loadChildren: () => import('./cadastrar/cadastrar.module').then( m => m.CadastrarPageModule)
   }
 ];
 

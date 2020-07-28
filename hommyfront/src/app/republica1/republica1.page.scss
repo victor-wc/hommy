@@ -1,4 +1,8 @@
+ion-toolbar{
+    --ion-background-color: #ED1146;
+    color: #F6F6F6;
 
+}
 ion-card{
     --ion-background-color: #ED1146;
 }
@@ -6,7 +10,7 @@ ion-card{
 ion-button{
     --ion-background-color: #ED1146;
     width: 85%;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: bolder;
     margin-bottom: 5%;
 }

@@ -1,0 +1,20 @@
+ion-toolbar{
+    --ion-background-color: #ED1146;
+    color: #F6F6F6;
+
+}
+ion-title{
+    background-color: #ED1146;
+    font-size: 1.2em;
+}
+ion-button{
+    --ion-background-color: #ED1146;
+}
+io-radio{
+    color: #ED1146;
+    --ion-background-color: #ED1146;
+}
+.toolbar{
+    display: flex;
+    align-items: center;
+}
