@@ -1,23 +1,20 @@
-ion-toolbar{
-    --ion-background-color: #ED1146;
-    color: #F6F6F6;
-
-}
 
 ion-card{
     --ion-background-color: #ED1146;
 }
 
-ion-title{
-    background-color: #ED1146;
-    font-size: 1.2em;
-}
 ion-button{
     --ion-background-color: #ED1146;
     width: 85%;
-    margin-bottom: 5%;
     font-size: 1.2em;
     font-weight: bolder;
+    margin-bottom: 5%;
+}
+
+ion-title{
+    background-color: #ED1146;
+    font-size: 1.2em;
+    color: #F6F6F6;
 }
 
 .estrelas{
@@ -31,9 +28,9 @@ ion-button{
 }
 
 h2{ 
+    text-align: center;
     font-size: 1em;
     color: #000000;
-    text-align: center;
 }
 h3{
     color: #F6F6F6;
@@ -51,10 +48,7 @@ h4{
     margin-right: 37%;
 
 }
-
 .botao{
     display: flex;
     justify-content: center;
 }
-
-

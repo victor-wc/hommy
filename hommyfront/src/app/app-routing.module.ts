@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'favorites',
     loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
+  },
+  {
+    path: 'republica1',
+    loadChildren: () => import('./republica1/republica1.module').then( m => m.Republica1PageModule)
   }
 ];
 

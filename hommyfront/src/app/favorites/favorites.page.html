@@ -9,37 +9,21 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-  <div class="anuncio">
-    <ion-card>
-      <img src="../assets/casa.jpg"/>
-      <ion-card-header>
-        <ion-card-subtitle><h3>Postado por V.</h3></ion-card-subtitle>
-        <ion-card-title><h2>Rua Sebastião Lacerda 35, Laranjeiras</h2></ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <h3>Possui 4 quartos e vaga para carro
-        Pagamento pode ser por depósito</h3>
-      </ion-card-content>
-      <div class="imagem"><img src="../assets/rating.png"></div>
-      <div class="botao">Entre em contato com o anunciante!</div>
-    </ion-card>
-  </div>
-
-  <div class="anuncio">
-    <ion-card>
-      <img src="../assets/casa1.jpg"/>
-      <ion-card-header>
-        <ion-card-subtitle><h3>Postado por Renato</h3></ion-card-subtitle>
-        <ion-card-title><h2>Rua Sebastião Lacerda 35, Laranjeiras</h2></ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <h3>Possui 4 quartos e vaga para carro</h3>
-        <h3>Pagamento pode ser por depósito</h3>
-      </ion-card-content>
-      <div class="imagem"><img src="../assets/rating.png"></div>
-      <div class="botao">Entre em contato com o anunciante!</div>
-    </ion-card>
-  </div>
-
+  <ion-card *ngFor= " let republica of republicas">
+    <img src="{{republica.imagem}}"/>
+    <ion-card-header>
+      <ion-card-subtitle><h3>Postado por {{republica.nome}}</h3></ion-card-subtitle>
+      <ion-card-title><h2>{{republica.endereco}}</h2></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h3>{{republica.descricao}}</h3>
+    </ion-card-content>
+    <div class="estrelas"><img src="{{republica.imagemRating}}"></div>
+    <h4>{{republica.rating}}</h4>
+    <div class="botao">
+    <ion-button shape="round" fill="outline">Entre em contato com o anunciante!</ion-button>
+    </div>
+  </ion-card>
 </ion-content>

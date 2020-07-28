@@ -21,10 +21,12 @@
   <ion-card *ngFor="let republica of republicas">
     <img src="{{republica.imagem}}"/>
     <ion-card-header>
-      <ion-card-title><h2>{{republica.rating}}</h2></ion-card-title>
+      <div class="estrelas"><img src="{{republica.imagemRating}}"/></div>
+      <ion-card-title><div class="h2">{{republica.rating}}</div></ion-card-title>
     </ion-card-header>
-    <div class="imagem"><img src="{{republica.imagemRating}}"/></div>
-    <div class="botao">Clique para saber mais!</div>
+    <div class="botao">
+    <ion-button shape="round" fill="outline" routerLink="{{republica.router}}">Clique para saber mais!</ion-button>
+    </div>
   </ion-card>
 
 

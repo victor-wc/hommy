@@ -8,6 +8,7 @@ class Republica {
   descricao: string;
   imagem: string;
   imagemRating: string;
+  router: string;
 
 
   
@@ -33,7 +34,8 @@ export class HomePage implements OnInit {
       nome: 'Renato',
       descricao: 'Possui 4 quartos e vaga para carro',
       imagemRating: "../assets/rating.png",
-      imagem: "../assets/quarto.jpg"
+      imagem: "../assets/quarto.jpg",
+      router: "/republica1"
 
 
     },
@@ -44,7 +46,8 @@ export class HomePage implements OnInit {
       nome: 'Victor',
       descricao: 'Piscina e vaga para carro',
       imagemRating: "../assets/rating.png",
-      imagem: "../assets/quarto2.jpg"
+      imagem: "../assets/quarto2.jpg",
+      router: "/republica2"
     }
     
   ];
