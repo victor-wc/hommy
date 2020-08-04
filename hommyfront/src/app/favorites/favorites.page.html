@@ -12,22 +12,9 @@
 
 <ion-content>
   <app-card
-   (buttonPressed)="handleButtonEvent($event)" 
-   [imagem]="imagem"
-   [descricao]="descricao"
-   [nome]="nome"
-   [imagemRating]="imagemRating"
-   [endereco]="endereco"
-   [rating]="rating">
+  *ngFor="let republica of republicas"
+   (buttonPressed)="handleButtonEvent($event)"
+   [republica]="republica"
+  >
   </app-card>
-
-  <app-card
-  (buttonPressed)="handleButtonEvent($event)" 
-  [imagem]="imagem2"
-  [descricao]="descricao2"
-  [nome]="nome2"
-  [imagemRating]="imagemRating2"
-  [endereco]="endereco2"
-  [rating]="rating2">
- </app-card>
 </ion-content>
