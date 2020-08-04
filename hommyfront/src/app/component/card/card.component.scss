@@ -1,0 +1,53 @@
+ion-card{
+    --ion-background-color: #ED1146;
+}
+
+ion-button{
+    --ion-background-color: #ED1146;
+    width: 85%;
+    font-size: 0.8em;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+
+ion-title{
+    background-color: #ED1146;
+    font-size: 1.2em;
+    color: #F6F6F6;
+}
+
+.estrelas{
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar{
+    display: flex;
+    align-items: center;
+}
+
+h2{ 
+    text-align: center;
+    font-size: 1em;
+    color: #000000;
+}
+h3{
+    color: #F6F6F6;
+    text-align: center;
+    font-size: 1.0em;
+}
+h4{
+    background-color: #F6F6F6;
+    color: #ED1146;
+    padding: 2%;
+    border-radius: 120px;
+    width: 21%;
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+.botao{
+    display: flex;
+    justify-content: center;
+}

@@ -1,42 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
-class Republica {
-  endereco: string;
-  rating: string;
-  nome: string;
-  descricao: string;
-  imagem: string;
-  imagemRating: string;
-
-
-  
-}
-
-
 @Component({
   selector: 'app-republica1',
   templateUrl: './republica1.page.html',
   styleUrls: ['./republica1.page.scss'],
 })
 export class Republica1Page implements OnInit {
-  republicas: Republica[];
+  imagem: string = '../assets/quarto.jpg';
+  descricao: string ='Possui 4 quartos e vaga para carro';
+  nome: string = 'Renato';
+  imagemRating: string ='../assets/rating.png';
+  endereco: string ='Voluntários da Pátria, 105, Botafogo';
+  rating: string='4,917';
+
+
   constructor() { }
 
+  handleButtonEvent(event:any){
+    console.log(event);
+  }
+
   ngOnInit() {
-    this.republicas = [
-      
-      {
-      endereco: 'Voluntários da Pátria, 105, Botafogo',
-      rating: '4,917',
-      nome: 'Renato',
-      descricao: 'Possui 4 quartos e vaga para carro',
-      imagemRating: "../assets/rating.png",
-      imagem: "../assets/quarto.jpg"
-
-
-    }
-    
-  ];
 
   }
 

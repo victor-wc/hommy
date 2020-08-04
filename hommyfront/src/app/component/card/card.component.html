@@ -1,0 +1,15 @@
+  <ion-card>
+    <img src="{{imagem}}"/>
+    <ion-card-header>
+      <ion-card-subtitle><h3>Postado por {{nome}}</h3></ion-card-subtitle>
+      <ion-card-title><h2>{{endereco}}</h2></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h3>{{descricao}}</h3>
+    </ion-card-content>
+    <div class="estrelas"><img src="{{imagemRating}}"></div>
+    <h4>{{rating}}</h4>
+    <div class="botao">
+    <ion-button shape="round" fill="outline" (click)=handleButton()>Entre em contato com o anunciante!</ion-button>
+    </div>
+  </ion-card>

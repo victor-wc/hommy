@@ -18,14 +18,17 @@
     <h1>Topo</h1> <h1>Sugerido</h1> <h1>Novo</h1>        
   </div>
 
-  <ion-card *ngFor="let republica of republicas">
-    <img src="{{republica.imagem}}"/>
+  <ion-card *ngFor="let republica of republicasArray">
+    <img src="../../assets/quarto.jpg" (click)="irParaRepublica(republica.id)">
     <ion-card-header>
-      <div class="estrelas"><img src="{{republica.imagemRating}}"/></div>
-      <ion-card-title><div class="h2">{{republica.rating}}</div></ion-card-title>
+      <ion-card-title><h5>{{republica.name}}</h5></ion-card-title>
+      <ion-card-subtitle>{{republica.address}}</ion-card-subtitle>
+      <ion-text><h6>{{republica.city}}</h6></ion-text>
+      <ion-text><h6>{{republica.district}}</h6></ion-text>
+      <ion-text><h6>{{republica.description}}</h6></ion-text>
     </ion-card-header>
     <div class="botao">
-    <ion-button shape="round" fill="outline" routerLink="{{republica.router}}">Clique para saber mais!</ion-button>
+    <ion-button shape="round" fill="outline" routerLink="">Clique para saber mais!</ion-button>
     </div>
   </ion-card>
 

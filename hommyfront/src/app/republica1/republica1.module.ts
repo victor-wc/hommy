@@ -8,6 +8,8 @@ import { Republica1PageRoutingModule } from './republica1-routing.module';
 
 import { Republica1Page } from './republica1.page';
 
+import { CardComponent } from '../component/card/card.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { Republica1Page } from './republica1.page';
     IonicModule,
     Republica1PageRoutingModule
   ],
-  declarations: [Republica1Page]
+  declarations: [Republica1Page, CardComponent]
 })
 export class Republica1PageModule {}
